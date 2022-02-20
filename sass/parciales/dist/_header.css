@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡       HEADER   ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡*/
+/* Inicio cabecera */
+/* border: 1px solid #D69C79; */
+/* background-color: #E4DCD8;    */
+/* para pruebas */
+/* para pruebas */
+.nav__estilo {
+  font-size: 1.6rem;
+  font-weight: none;
+  margin-bottom: 0rem;
+  color: #D69C79 !important;
+  transition: all 0.5s ease;
+}
+.nav__estilo:hover {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #D69C79;
+  border-bottom: 3px solid #D69C79;
+}
+
+h1 {
+  position: relative;
+  left: -150px;
+}
+
+.header__logo {
+  border-radius: 50%;
+  border: 1px solid #D69C79;
+  width: 7rem;
+  height: 7rem;
+  animation: animaImg 5s ease 0s infinite;
+  /* para pruebas */
+  /* background-color: #7ca51b;  
+  border: 1px solid #1e0db4; */
+}
+
+.header__compras {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #D69C79;
+}
+
+/*Animacion para logo e imagen de compras*/
+@keyframes animaImg {
+  0% {
+    transform: scale(0.8, 0.8) rotate(0deg);
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    transform: scale(0.9, 0.9) rotate(0deg);
+    /* transform: rotate(20deg); */
+  }
+  100% {
+    transform: scale(1, 1) rotate(40deg);
+    /* transform: rotate(40deg);     */
+  }
+}
+/* fin cabecera */
+.botonLogo {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.styleBubbleCart {
+  color: #b2b5b9;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: 1px solid #D69C79;
+  background-color: #f0edec;
+  height: 1.3rem;
+  width: 1.3rem;
+  top: 10%;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}

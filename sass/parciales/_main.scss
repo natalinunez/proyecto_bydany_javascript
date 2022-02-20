@@ -1,0 +1,74 @@
+@import './vars';
+@import './mixins.scss';
+/*////////////////////////////////////////////////////////////////Pagina Principal///////////////////////////////////////////////////////*/
+ /* inicio carrusel */
+  /* Esto es para controlar alto de la imagen del carrusel */
+  /* carousel-item es una clase propia de bootstrap*/
+  .carouselItem{
+        // max-height: 80vh;   
+        height: 80vh;   
+  }
+  
+  .carouselItem__titulo{        
+    //      estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia)
+    @include estiloTexto(2.7rem, bold, 1rem, $colorTipograCarrousel);
+  }
+
+  .carouselItem__titulo_1{        
+    //      estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia)
+    // @include estiloTexto(2.7rem, bold, 4rem, $colorTipograCarrousel);
+    // @include estiloTexto(2.7rem, bold, 1rem, $colorTipograCarrousel);
+    color: #D69C79;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    background-color: #f1e6df;
+    padding-top: 0.5rem;
+  }  
+
+  .carouselItem__parrafo{      
+    //      estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia) 
+    @include estiloTexto(2.2rem, none, 0.5rem, $colorTipograCarrousel);
+  }
+
+  .colorTipoCarrusel_1 {
+    // color: #200b01;
+    color: #868080;
+  }
+
+  .colorTipoCarrusel_2 {
+    color: #f1e7e7;
+    // color: #200b01;
+  }  
+
+/* fin carrusel */
+
+  .carbody__titu {    
+    font-size: 1.7rem;    
+  }
+
+  .card__efecto:hover{  
+    transition: all 0.5s ease;
+    /*crece el card*/
+    transform: scale(1.1,1.1);
+  }
+
+  //animaciones con jquery
+  .contenedorTipoCate{
+    position: relative;
+    /* display: inline-block; */
+    text-align: center;    
+  }
+  
+  .centrado{
+    // display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #af6a3f;
+    font-size: 2rem;
+    // font-weight: bold;
+    line-height: 2.5rem;
+  }

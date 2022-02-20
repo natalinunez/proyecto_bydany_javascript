@@ -1,0 +1,291 @@
+/* @import "https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"; */
+.claseBorderAzul {
+  border: 3px solid #230985;  
+}
+
+.claseBorderRojo {
+  border: 3px solid #db0b0b;  
+}
+
+.claseBorderVerde {
+  border: 3px solid #0fe43d;  
+}
+
+.claseBorderRosado {
+  border: 3px solid #ee19a7;  
+}
+
+.claseBorderAmarrillo {
+  border: 3px solid #ecc410;  
+}
+
+@font-face {
+  font-family: 'robotoMedium';
+  src: url('../tipocrafia/Roboto-Medium.ttf')
+}
+
+/* @font-face {
+  font-family: 'robotoMedium';
+  src: url('../tipocrafia/DancingScript/DancingScript-Regular.ttf')
+} */
+
+/* //Inicio Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "robotoMedium";    
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Courgette', cursive; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none!important;
+  font-family: "robotoMedium";
+  font-size: 1.5rem;  
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1em;
+}
+/* //Fin Reset CSS */
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡       HEADER   ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡*/
+/* Inicio cabecera */
+.estilo__Hambur {
+  color: #D69C79!important;
+  /* border: 1px solid #D69C79; */
+  /* background-color: #E4DCD8;    */
+}
+
+.nav__estilo {
+  color: #E7D0C1!important;
+  font-weight: 700;
+  transition: all 0.5s ease
+}
+
+.nav__estilo:hover {
+  color: #D69C79;
+  font-weight: bold;
+  font-size: 1.9rem;  
+  border-bottom: 3px solid #D69C79;   
+}
+
+.header__logo{
+  border-radius: 50%;
+  border: 1px solid #D69C79;
+  width: 4.5em;
+  height: 4.5em;   
+  /* animation: animaImg 5s ease 0s infinite; */
+  /* para pruebas */
+  /* background-color: #7ca51b;  
+  border: 1px solid #1e0db4; */
+}
+
+.header__compras{    
+  width: 4.5em;
+  height: 4.5em;
+  color: #D69C79;        
+  /* animation: animaImg 5s ease 0s infinite; */
+  /* para pruebas */
+  /* background-color: #51cd32;  
+  border: 1px solid #1e0db4; */
+}
+
+/*Animacion para logo e imagen de compras*/
+@keyframes animaImg {
+  0% {
+    transform: scale(0.8,0.8) rotate(0deg);
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    transform: scale(0.9,0.9) rotate(0deg);
+    /* transform: rotate(20deg); */
+  }
+
+  100% {
+    transform: scale(1,1) rotate(40deg);
+    /* transform: rotate(40deg);     */
+  }
+}
+/* fin cabecera */
+
+/*////////////////////////////////////////////////////////////////Pagina Principal///////////////////////////////////////////////////////*/
+ /* inicio carrusel */
+  /* Esto es para controlar alto de la imagen del carrusel */
+    .carousel-item{
+      max-height: 80vh;
+      text-align: center!important;    
+    }
+
+    .titulo__slider{
+      font-size: 2.5em !important;    
+      color: #530808;
+      font-family: "robotoMedium";
+    }
+
+    .parrafo__slider{
+        font-size: 1.5em !important;    
+        color:#530808;
+        font-family: "robotoMedium";
+    }
+  /* fin carrusel */
+
+    .carbody__titu {
+      color : #D69C79;
+      font-weight: none;
+    }
+
+    .card__efecto:hover{  
+      /* cursor: pointer; */
+      transition: all 0.5s ease;
+      /*crece el card*/
+      transform: scale(1.1,1.1);
+    }
+
+/* ////////////////////////////////////////Pagina sobre Nosotros/////////////////////////////////// */
+/* Ini pagina sobreNosotros */  
+.sectionWe__Title {
+  color : #D69C79;  
+  text-align: center;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
+  /* para pruebas */
+  /* border: 2px solid #230985; */
+  /* margin-bottom: 20px; */
+}
+
+.sectionWe__description{
+  color : #D69C79;  
+  text-align: center;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* border: 2px solid #230985; */
+  /* margin-bottom: 20px; */
+}
+
+.sectionWe__Title:hover {
+  transform: scale(1.3,1.3);
+}
+
+.sectionWe__description {
+  padding: 0.5em 0em;
+}
+
+.sectionWe__img:hover{
+  width: auto;
+  height: 50vh;  
+  transform: skewY(3deg);
+  /* para pruebas */
+  /* background-color: red;     */
+}
+/* Fin pagina sobreNosotros */  
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡    FOOTER   /////////////////////////////////////////////////////////////////////////*/
+/* inicio footer */
+.estifooter__titulo{
+  color: #773939!important;
+  font-weight: bold;  
+  font-size: 1.5em;
+}  
+
+.estifooter__tituloancla {
+  color: #855151;  
+  font-weight: bold;  
+}  
+
+.estifooter__tituloancla:hover {
+  color: #C1B0A8;
+  font-weight: bold;
+  font-size: 1.7em;      
+}	
+
+.estifooter__icon {
+  color: #773939;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* background-color: rgb(197, 89, 17); */
+  /* border: 3px solid #230985;   */  
+}
+
+.estifooter__icon:hover {    
+  color: #C1B0A8;
+  transform: rotate(30deg) scale(1.2);
+}  
+
+.footer__copyrigth {
+  font-size: 1em;
+  color: #773939;
+  font-weight:700px; 
+  text-align: center;
+}  
+/* fin footer */
+
+/* //////////////////////////////////////Pagina ARETES//////////////////////////// */
+/* Ini pagina aretes */
+.containerAretes {
+  display: grid;
+  grid-template-rows: 50vh 220vh auto;
+  grid-template-columns: auto;
+  grid-row-gap: 30px;
+  max-height: 100vh;  
+  /* para pruebas */
+  /* border: 3px solid #0b3abb;     */
+  /* background-color: yellowgreen */
+}
+
+.mainCatalogo {
+  color : #D69C79;  
+}
+
+.mainCatalogo h3{
+  /* background-color: yellowgreen; */
+  margin: 20px auto;  
+  text-align: center;
+  /* align-items: center; */
+}
+
+.productos {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.productos__unidad {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+.productos__unidad figure {
+  width: 200px;  
+}
+
+.productos__unidad figure img {
+  width: 100%;  
+}
+
+.productos__unidad h2 {
+  background-color: pink
+}
+/* Fin pagina aretes */
+
+/*responsi*/
+/* @media screen and (min-width:860px) and (max-width: 960px) {
+} */
+/* //////////////////////////////////////Pagina COLLARES//////////////////////////// */
+/* //////////////////////////////////////Pagina PULSERAS//////////////////////////// */

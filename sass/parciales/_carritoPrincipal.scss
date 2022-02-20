@@ -1,0 +1,41 @@
+@import './vars';
+@import './mixins.scss';
+
+.estiloGeneral {
+    width: 2.5rem;    
+    border: 1px solid $colorTipograGeneral;
+  }
+
+.botonCantiCarrito {  
+  border: 1px solid $colorTipograGeneral;
+  color: $colorTipograGeneral;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+//estilo para mostrar compra exitosa
+.btnCart {      
+  // styleButton ($borderThickness, $borderstyle, $bordeColor, $fontColor, $backgroundColor)
+  @include styleButton(1px, solid, $colorTipograGeneral, $colorTipograGeneral, $colorFondo);      
+}
+
+.btnCart:hover {  
+  @include styleButton(1px, solid, $colorTipograGeneral, $colorTipograGeneral, $colorFondo);      
+}
+
+/* para pruebas */
+// .colorAzul {
+//     border: 2px solid #230985;    
+// }
+
+// .colorRojo {
+//     border: 2px solid #f70c0c;
+// }
+
+// .colorAmarrillo {
+//     border: 2px solid #f1c70c;
+// }
+
+// .colorVerde {
+//   border: 2px solid #1c9e10;
+// }

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* para pruebas */
+/* para pruebas */
+/* @import "https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"; */
+@font-face {
+  font-family: "robotoMedium";
+  src: url("../tipocrafia/Roboto-Medium.ttf");
+}
+/* @font-face {
+  font-family: 'robotoMedium';
+  src: url('../tipocrafia/DancingScript/DancingScript-Regular.ttf')
+} */
+/* //Inicio Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #D69C79;
+}
+
+body {
+  font-family: "robotoMedium";
+  font-size: 1rem;
+  color: #D69C79;
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Courgette', cursive; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "robotoMedium";
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+}
+
+/* //Fin Reset CSS */
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡       HEADER   ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡*/
+/* Inicio cabecera */
+/* border: 1px solid #D69C79; */
+/* background-color: #E4DCD8;    */
+/* para pruebas */
+/* para pruebas */
+.nav__estilo {
+  font-size: 1.6rem;
+  font-weight: none;
+  margin-bottom: 0rem;
+  color: #D69C79 !important;
+  transition: all 0.5s ease;
+}
+.nav__estilo:hover {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #D69C79;
+  border-bottom: 3px solid #D69C79;
+}
+
+h1 {
+  position: relative;
+  left: -150px;
+}
+
+.header__logo {
+  border-radius: 50%;
+  border: 1px solid #D69C79;
+  width: 7rem;
+  height: 7rem;
+  animation: animaImg 5s ease 0s infinite;
+  /* para pruebas */
+  /* background-color: #7ca51b;  
+  border: 1px solid #1e0db4; */
+}
+
+.header__compras {
+  width: 6rem;
+  height: 6rem;
+  color: #D69C79;
+  animation: animaImg 5s ease 0s infinite;
+  /* para pruebas */
+  /* background-color: #51cd32;  
+  border: 1px solid #1e0db4; */
+}
+
+/*Animacion para logo e imagen de compras*/
+@keyframes animaImg {
+  0% {
+    transform: scale(0.8, 0.8) rotate(0deg);
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    transform: scale(0.9, 0.9) rotate(0deg);
+    /* transform: rotate(20deg); */
+  }
+  100% {
+    transform: scale(1, 1) rotate(40deg);
+    /* transform: rotate(40deg);     */
+  }
+}
+/* fin cabecera */
+/* para pruebas */
+/* para pruebas */
+/*////////////////////////////////////////////////////////////////Pagina Principal///////////////////////////////////////////////////////*/
+/* inicio carrusel */
+/* Esto es para controlar alto de la imagen del carrusel */
+/* carousel-item es una clase propia de bootstrap*/
+.carouselItem {
+  max-height: 80vh;
+}
+
+.carouselItem__titulo {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #af6a3f;
+}
+
+.carouselItem__parrafo {
+  font-size: 1.7rem;
+  font-weight: none;
+  margin-bottom: 3rem;
+  color: #af6a3f;
+}
+
+/* fin carrusel */
+.carbody__titu {
+  font-size: 1.7rem;
+}
+
+.card__efecto:hover {
+  transition: all 0.5s ease;
+  /*crece el card*/
+  transform: scale(1.1, 1.1);
+}
+
+/* para pruebas */
+/* para pruebas */
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡    FOOTER   /////////////////////////////////////////////////////////////////////////*/
+/* inicio footer */
+.estifooter__titulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+.estifooter__titulo:hover {
+  color: #d48c5f;
+}
+
+.estifooter__tituloancla {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+.estifooter__tituloancla:hover {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #C1B0A8;
+}
+
+.estifooter__icon {
+  color: #d48c5f;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* background-color: rgb(197, 89, 17); */
+  /* border: 3px solid #230985;   */
+}
+
+.redSocial:hover {
+  transform: rotate(30deg) scale(1.1);
+}
+.redSocial:hover .estiloRed--facebook {
+  color: #3b5998;
+}
+.redSocial:hover .estiloRed--instagram {
+  color: #DD2A7B;
+}
+.redSocial:hover .estiloRed--tiktok {
+  color: #69C9D0;
+}
+
+.footer__copyrigth {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: none;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+
+/* fin footer */
+/* para pruebas */
+/* para pruebas */
+.card__boton {
+  font-size: 1.2rem;
+  color: #d48c5f;
+  background-color: #E4DCD8;
+}
+.card__boton:hover {
+  color: #d48c5f;
+  font-weight: bold;
+}
+
+.card__hover:hover {
+  transition: all 0.5s ease;
+  /*crece el card*/
+  transform: scale(1.05, 1.05);
+  color: #d48c5f;
+  font-weight: bold;
+}
+
+.card__body {
+  font-size: 1.2rem;
+  color: #d48c5f;
+}
+
+.estiloNombreCategoria {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #D69C79;
+  text-align: center;
+}
+
+.fontsizeColorWeight {
+  font-size: 1.2rem;
+  color: #D69C79;
+  font-weight: none;
+}
+
+.flexBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* para pruebas */
+/* para pruebas */
+/* para pruebas */
+.sectionWe__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: #D69C79;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* border: 2px solid #230985; */
+}
+.sectionWe__title:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.sectionWe__description {
+  line-height: 1.8rem;
+  text-align: justify;
+  padding: 0.5em 1em;
+  /* para pruebas */
+  /* border: 2px solid #230985; */
+}
+
+.sectionWe__img:hover {
+  width: auto;
+  height: 50vh;
+  transform: skewY(3deg);
+}
+
+/* para pruebas */
+/* para pruebas */
+.tituloParrafo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #D69C79;
+}
+
+.fondo {
+  background-color: #f1e6df;
+}
+
+.colorTipografia {
+  color: #D69C79;
+}
+
+.parrafo {
+  line-height: 1.8rem;
+}
+
+.btnFormulario {
+  border: 1px solid #D69C79;
+  color: #D69C79;
+  background-color: #f1e6df;
+}
+.btnFormulario:hover {
+  color: #D69C79;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,35 @@
+@import './vars';
+
+@mixin widthHeight($width, $height){    
+    width: $width;
+    height: $width;
+}
+
+@mixin fontsizeColorWeight($fontSize, $colorTipografia, $fontWeight){
+    font-size: $fontSize;    
+    color: $colorTipografia;
+    font-weight: $fontWeight;  
+}
+
+// @mixin tituloParrafo($fontSize, $fontWeight, $marginBottom, $colorTipografia) {
+@mixin estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia) {    
+    font-size: $fontSize;    
+    font-weight: $fontWeight;
+    margin-bottom: $marginBottom;    
+    color: $colorTipografia;
+}
+
+@mixin flex($flexDirection, $justifyContent, $alignItems, $gap) {
+    display: flex;        
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    gap: $gap;    
+}
+
+@mixin styleButton ($borderThickness, $borderstyle, $bordeColor, $fontColor, $backgroundColor){
+    border: $borderThickness $borderstyle $bordeColor;
+    color: $fontColor;
+    background-color:$backgroundColor;     
+}
+

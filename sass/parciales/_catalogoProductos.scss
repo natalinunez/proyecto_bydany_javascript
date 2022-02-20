@@ -1,0 +1,53 @@
+@import './vars';
+@import './mixins.scss';
+
+.card__boton{    
+    font-size: $fontSizeCatalogoProducto;//1.2rem
+    color: $colorTipograFooter;         
+    background-color:  #E4DCD8;
+    &:hover{
+        color: $colorTipograFooter;
+        font-weight: bold;
+    }
+}
+
+.card__hover:hover{  
+    transition: all 0.5s ease;
+    /*crece el card*/
+    transform: scale(1.05,1.05);
+    color: $colorTipograFooter;
+    font-weight: bold;
+}
+
+.card__body{
+    font-size: $fontSizeCatalogoProducto;//1.2rem
+    color: $colorTipograFooter;         
+}
+
+.estiloNombreCategoria {
+    // @mixin tituloParrafo($fontSize, $fontWeight, $marginBottom, $colorTipografia) {
+    @include estiloTexto(1.8rem, bold, 0rem, $colorTipograGeneral);
+    text-align: center;
+}
+ 
+.fontsizeColorWeight{
+    // @mixin fontsizeColorWeight($fontSize, $colorTipografia, $fontWeight)
+    @include fontsizeColorWeight(1.2rem, $colorTipograGeneral, none)    
+}
+
+.flexBody {
+    //flex($flexDirection, $justifyContent, $alignItems, $gap)
+    @include flex(column, center, center, 0.8rem)
+}
+/* para pruebas */
+// .colorAzul {
+//     border: 2px solid #230985;    
+// }
+
+// .colorRojo {
+//     border: 2px solid #f70c0c;
+// }
+
+// .colorAmarrillo {
+//     border: 2px solid #f1c70c;
+// }

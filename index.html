@@ -1,0 +1,293 @@
+<!-- <!DOCTYPE html> -->
+<html lang="es">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Esto es para SEO -->
+    <meta name="description" content="bydany es bisuteria manual peruana">
+    <meta name="keywords" content="bydany, by dany, aretes, collares, pulseras">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Para los iconos de las redes sociales -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Este link es para resetear los estilos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />    
+    <!-- Estilos propios de la pagina -->
+    <link rel="stylesheet" href="./sass/main.css" />
+
+    <title>By Dany</title>
+    <link rel="shortcut icon" href="./images/logoByDany.png" />
+  </head>
+  <body>
+    <!-- Ini barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container claseBorderVerde">
+        <p class="navbar-brand claseBorderRojo flex-column justify-content-start">
+          <img src="./images/logoByDany.png" alt="logo app" class="header__logo"/>
+        </p>
+
+        <button class="navbar-toggler estilo__Hambur claseBorderRojo"
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon estilo__Hambur claseBorderRojo"></span>
+        </button>
+
+        <div class="collapse navbar-collapse claseBorderAzul justify-content-center"
+          id="navbarNav">
+          <ul class="navbar-nav align-items-center claseBorderRosado">
+            <li class="nav-item">
+              <a class="nav-link active nav__estilo mx-5" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__estilo mx-5" onclick="fCategoriaAretes()" href="./vistas/aretes.html">Aretes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__estilo mx-5" onclick="fcategoriaCollares()" href="./vistas/collares.html">Collares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__estilo mx-5" onclick="fcategoriaPulseras()" href="./vistas/pulseras.html">Pulseras</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="navbar-brand botonLogo" id="idLogoCarrito">
+          <img src="./images/shopping-bag.svg" alt="logo compras" class="header__compras"/>
+          <div class="styleBubbleCart " id="idStyleBubbleCart">0</div>
+        </button>
+
+      </div>
+    </nav>
+    <!-- Fin barra de navegacion -->
+
+    <!-- Ini carrusel -->
+    <div class="container-fluid">
+      <div class="row carouselItem__titulo_1">
+        <div col="col-md-12">
+            <h4 class="carouselItem__titulo_1 colorAzul">
+              By Dany es joyería y bisutería, hechas a mano con mucho amor.
+            </h4>
+        </div>
+      </div>      
+
+      <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2">
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active carouselItem">
+              <img
+                src="./images/Slidercollares_1536w_585h.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block ">
+                <h5 class="carouselItem__titulo colorTipoCarrusel_1">Joyería y Bisutería Exclusiva</h5>
+                <p class="carouselItem__parrafo colorTipoCarrusel_1">Modelos y diseños únicos como tú</p>
+              </div>
+            </div>
+
+            <div class="carousel-item carouselItem">
+              <img                
+                src="./images/slider_corazon_1500x.jpg"                
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carouselItem__titulo ">Finos acabados</h5>
+                <p class="carouselItem__parrafo ">
+                  Fabricadas por manos expertas 
+                </p>
+              </div>
+            </div>            
+
+            <div class="carousel-item carouselItem ">
+              <img
+                src="./images/slider_hechoAmor.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carouselItem__titulo colorTipoCarrusel_2">Joyería y Bisutería Artesanal</h5>
+                <p class="carouselItem__parrafo colorTipoCarrusel_2">
+                  Diseñadas y fabricadas de forma manual, por manos peruanas.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Fin carrusel -->
+
+    <!-- Ini categoria de Productos -->
+    <div class="container my-5" >
+      <div class="row">
+        <div class="col-md-4 mt-2 d-flex justify-content-center contenedorTipoCate" id="contenedorMensaje_1">
+          <a href="./vistas/aretes.html" class="card-link" onclick="fCategoriaAretes()">
+            <div class="card card__efecto" style="width: 20rem">
+              <img class="img-fluid imagenCate_1" src="./images/aretes_320w_400h.jpg" alt="" />
+              <div class="card-body">                
+                  <h2 class="text-center mt-0 mb-0 carbody__titu">Aretes</h2>
+                  <div class="centrado" id="eventoMensaje_1">Click para ver más aretes</div>
+              </div>
+            </div>
+          </a>            
+        </div>
+        <div class="col-md-4 mt-2 d-flex justify-content-center contenedorTipoCate" id="contenedorMensaje_2">
+          <a href="./vistas/collares.html" class="card-link" onclick="fcategoriaCollares()">
+            <div class="card card__efecto" style="width: 20rem">
+              <img class="img-fluid imagenCate_2" src="./images/collares_320w_400h.jpg" alt=""/>
+              <div class="card-body">                
+                  <h2 class="text-center mt-0 mb-0 carbody__titu">Collares</h2>
+                  <div class="centrado" id="eventoMensaje_2">Click para ver más collares</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mt-2 d-flex justify-content-center contenedorTipoCate" id="contenedorMensaje_3">
+          <a href="./vistas/pulseras.html" class="card-link" onclick="fcategoriaPulseras()">
+            <div class="card card__efecto" style="width: 20rem">
+              <img class="img-fluid imagenCate_3" src="./images/pulseras_320w_400h.jpg" alt="" />
+              <div class="card-body">                
+                  <h2 class="text-center mt-0 mb-0 carbody__titu">Pulseras</h2>
+                  <div class="centrado" id="eventoMensaje_3">Click para ver más pulseras</div>
+                </a>
+              </div>
+            </div>
+          </a>  
+        </div>
+      </div>
+    </div>
+    <!-- Fin categoria de Productos -->
+
+    <!-- Ini footer -->
+    <div class="container-fluid mt-2 fondo">
+      <div class="row">
+        <div class="col-md-6 my-2">
+          <div class="">
+            <ul class="navbar-nav align-items-md-start">
+              <li class="nav-item text-center">   
+                <a class="nav-link estifooter__titulo">La Empresa</a>                  
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link estifooter__tituloancla" href="./vistas/sobreNosotros.html">
+                  Sobre Nosotros
+                </a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link estifooter__tituloancla" href="./vistas/contactanos.html">
+                  Contactanos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-md-end">
+          <div class="row">
+            <!-- centro sigueme y los iconos en vertical -->
+            <div class="col-md-12 d-flex flex-column align-items-center">
+              <div class="row">
+                <h2 class="estifooter__titulo mb-3">¡Síguenos!</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center mb-2">
+                  <a href="https://www.facebook.com/bydanyperu" target="_blank" class="redSocial">
+                    <i class="fab fa-facebook fa-3x estiloRed--facebook estifooter__icon"></i>
+                  </a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                  <a href="https://www.instagram.com/bydanyperu/?hl=es-la" target="_blank" class="redSocial">
+                    <i class="fab fa-instagram fa-3x estiloRed--instagram estifooter__icon"></i>
+                  </a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                  <a href="https://www.tiktok.com/@bydanyperu?" target="_blank" class="redSocial">
+                    <i class="fab fa-tiktok fa-3x estiloRed--tiktok estifooter__icon"></i>
+                  </a>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3">
+      <div class="row mt-1">
+        <div class="col-md-12 d-flex justify-content-center">
+          <small class="footer__copyrigth">
+            ByDany 2022 © Todos los derechos reservados
+          </small>
+        </div>
+      </div>
+    </div>
+    <!-- Fin footer -->
+    
+    <!--Jquery 3.6-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+
+    <!--Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/index.js" ></script>    
+  </body>
+</html>

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "name": "Aretes",
+        "description": "Catálogo de Aretes"
+    },
+    {
+        "id": "2",
+        "name": "Collares",
+        "description": "Catálogo de Collares"    
+    },
+    {
+        "id": "3",
+        "name": "Pulseras",
+        "description": "Catálogo de Pulseras"    
+    }
+]
+

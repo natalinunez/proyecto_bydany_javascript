@@ -1,0 +1,29 @@
+/* para pruebas */
+/* para pruebas */
+.tituloParrafo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #D69C79;
+}
+
+.fondo {
+  background-color: #f1e6df;
+}
+
+.colorTipografia {
+  color: #D69C79;
+}
+
+.parrafo {
+  line-height: 1.8rem;
+}
+
+.btnFormulario {
+  border: 1px solid #D69C79;
+  color: #D69C79;
+  background-color: #f1e6df;
+}
+.btnFormulario:hover {
+  color: #D69C79;
+}

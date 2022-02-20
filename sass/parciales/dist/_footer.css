@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* para pruebas */
+/* para pruebas */
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡    FOOTER   /////////////////////////////////////////////////////////////////////////*/
+/* inicio footer */
+.estifooter__titulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+.estifooter__titulo:hover {
+  color: #d48c5f;
+}
+
+.estifooter__tituloancla {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+.estifooter__tituloancla:hover {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #C1B0A8;
+}
+
+.estifooter__icon {
+  color: #d48c5f;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* background-color: rgb(197, 89, 17); */
+  /* border: 3px solid #230985;   */
+}
+
+.redSocial:hover {
+  transform: rotate(30deg) scale(1.1);
+}
+.redSocial:hover .estiloRed--facebook {
+  color: #3b5998;
+}
+.redSocial:hover .estiloRed--instagram {
+  color: #DD2A7B;
+}
+.redSocial:hover .estiloRed--tiktok {
+  color: #69C9D0;
+}
+
+.footer__copyrigth {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: none;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+
+/* fin footer */

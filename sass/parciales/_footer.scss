@@ -1,0 +1,55 @@
+@import './vars';
+@import './mixins.scss';
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡    FOOTER   /////////////////////////////////////////////////////////////////////////*/
+/* inicio footer */
+  //La Empresa Siguenos
+  .estifooter__titulo{    
+    //       estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia)
+    @include estiloTexto($fontSizeFooter, bold, 0rem, $colorTipograFooter);
+
+    &:hover {
+      color: $colorTipograFooter;  
+      
+    }	            
+  }  
+  
+  .estifooter__tituloancla {    
+    //       estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia)
+    @include estiloTexto($fontSizeFooter, bold, 0rem, $colorTipograFooter);
+
+    &:hover {        
+      @include estiloTexto(1.7rem, bold, 0rem, #C1B0A8); 
+      }	    
+  }  
+  
+  .estifooter__icon {
+    color: $colorTipograFooter;
+    transition: all 0.5s ease;
+    /* para pruebas */
+    /* background-color: rgb(197, 89, 17); */
+    /* border: 3px solid #230985;   */  
+  }
+
+  //aplicando maps para colores de las rede sociales
+  .redSocial:hover {
+    transform: rotate(30deg) scale(1.1);
+    $redes: (
+      facebook: #3b5998 ,
+      instagram: #DD2A7B,
+      tiktok: #69C9D0
+    );
+
+    @each $red, $color in $redes {
+      .estiloRed--#{$red} {
+        color: $color;
+      }
+    }        
+
+  }
+  
+  .footer__copyrigth {
+    text-align: center;    
+    //       estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia)
+    @include estiloTexto(1rem, none, 0rem, $colorTipograFooter);   
+  }  
+  /* fin footer */

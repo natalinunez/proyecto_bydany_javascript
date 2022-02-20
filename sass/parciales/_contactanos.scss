@@ -1,0 +1,32 @@
+@import './vars';
+@import './mixins.scss';
+
+.tituloParrafo {
+    //      estiloTexto($fontSize, $fontWeight, $marginBottom, $colorTipografia)
+    @include estiloTexto($sizeTituloParrafo, bold, 2rem, $colorTipograGeneral);    
+}
+
+.fondo {
+    background-color:$colorFondo;
+}
+
+.colorTipografia {
+    color: $colorTipograGeneral;        
+}
+
+.parrafo {
+    line-height: $lineHeightParrafo;
+}
+
+.btnFormulario {
+    border: 1px solid $colorTipograGeneral;
+    color: $colorTipograGeneral;
+    background-color:$colorFondo;            
+
+    &:hover {
+        color: $colorTipograGeneral;
+    }    
+}
+
+
+

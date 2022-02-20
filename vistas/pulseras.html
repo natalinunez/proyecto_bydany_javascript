@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Para los iconos de las redes sociales -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Este link es para resetear los estilos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />    
+    <!-- Estilos propios de la pagina -->
+    <link rel="stylesheet" href="../sass/main.css" />
+
+    <title>By Dany</title>
+    <link rel="shortcut icon" href="../images/logoByDany.png" /> 
+  </head>
+  <body>
+    <!-- Ini barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container claseBorderVerde">
+        <a class="navbar-brand claseBorderRojo flex-column justify-content-start"
+          href="#">
+          <img src="../images/logoByDany.png" alt="logo app" class="header__logo"/>
+        </a>
+
+        <button class="navbar-toggler estilo__Hambur claseBorderRojo"
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon estilo__Hambur claseBorderRojo"></span>
+        </button>
+
+        <div class="collapse navbar-collapse claseBorderAzul justify-content-center"
+          id="navbarNav">
+          <ul class="navbar-nav align-items-center claseBorderRosado">
+            <li class="nav-item">
+              <a class="nav-link active nav__estilo mx-5" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__estilo mx-5" onclick="fCategoriaAretes()" href="../vistas/aretes.html">Aretes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__estilo mx-5" onclick="fcategoriaCollares()" href="../vistas/collares.html">Collares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__estilo mx-5" onclick="fcategoriaPulseras()" href="#">Pulseras</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="navbar-brand claseBorderRojo botonLogo" id="idLogoCarrito">
+          <img src="../images/shopping-bag.svg" alt="logo compras" class="header__compras"/>
+          <div class="styleBubbleCart bordeRojo" id="idStyleBubbleCart">0</div>
+        </button>        
+
+      </div>
+    </nav>
+    <!-- Fin barra de navegacion -->
+    
+    <!-- Ini catalogo pulseras -->
+    <div class="container my-5" >
+      <div class="container d-flex justify-content-around row m-auto my-5 " id="idCategoriaEtiqueta">
+      </div>      
+      <div class="container"  >
+        <ul class="d-flex">
+          <li>
+            <a class="fontsizeColorWeight"  href="../index.html">Inicio ></a>
+            
+          </li>
+          <li class="fontsizeColorWeight" id="idFontsizeColorWeight">            
+          </li>
+        </ul>        
+      </div>    
+      <div class="container d-flex justify-content-around row m-auto my-5" id="contenedorProducto">
+      </div>
+    <!-- <div class="container my-5" >
+      <div class="container d-flex justify-content-around row m-auto my-5" id="contenedorProducto">
+      </div> -->
+    </div>
+    <!-- Fin catalogo pulseras -->
+    
+    <!-- Ini footer -->
+    <div class="container-fluid mt-2 fondo">
+      <div class="row">
+        <div class="col-md-6 my-2">
+          <div class="">
+            <ul class="navbar-nav align-items-md-start">
+              <li class="nav-item text-center">   
+                <a class="nav-link estifooter__titulo">La Empresa</a>                  
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link estifooter__tituloancla" href="../vistas/sobreNosotros.html">
+                  Sobre Nosotros
+                </a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link estifooter__tituloancla" href="../vistas/contactanos.html">
+                  Contactanos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-md-end">
+          <div class="row">
+            <!-- centro sigueme y los iconos en vertical -->
+            <div class="col-md-12 d-flex flex-column align-items-center">
+              <div class="row">
+                <h2 class="estifooter__titulo mb-3">¡Síguenos!</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center mb-2">
+                  <a href="https://www.facebook.com/bydanyperu" target="_blank" class="redSocial">
+                    <i class="fab fa-facebook fa-3x estiloRed--facebook estifooter__icon"></i>
+                  </a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                  <a href="https://www.instagram.com/bydanyperu/?hl=es-la" target="_blank" class="redSocial">
+                    <i class="fab fa-instagram fa-3x estiloRed--instagram estifooter__icon"></i>
+                  </a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                  <a href="https://www.tiktok.com/@bydanyperu?" target="_blank" class="redSocial">
+                    <i class="fab fa-tiktok fa-3x estiloRed--tiktok estifooter__icon"></i>
+                  </a>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3">
+      <div class="row mt-1">
+        <div class="col-md-12 d-flex justify-content-center">
+          <small class="footer__copyrigth">
+            ByDany 2021 © Todos los derechos reservados
+          </small>
+        </div>
+      </div>
+    </div>
+    <!-- Fin footer -->
+
+    <!--Jquery 3.6-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+    <!--Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/catalogoProductos.js" ></script>        
+  </body>
+</html>

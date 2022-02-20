@@ -1,0 +1,68 @@
+/* para pruebas */
+/* para pruebas */
+/*////////////////////////////////////////////////////////////////Pagina Principal///////////////////////////////////////////////////////*/
+/* inicio carrusel */
+/* Esto es para controlar alto de la imagen del carrusel */
+/* carousel-item es una clase propia de bootstrap*/
+.carouselItem {
+  height: 80vh;
+}
+
+.carouselItem__titulo {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #af6a3f;
+}
+
+.carouselItem__titulo_1 {
+  color: #D69C79;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  background-color: #f1e6df;
+  padding-top: 0.5rem;
+}
+
+.carouselItem__parrafo {
+  font-size: 2.2rem;
+  font-weight: none;
+  margin-bottom: 0.5rem;
+  color: #af6a3f;
+}
+
+.colorTipoCarrusel_1 {
+  color: #868080;
+}
+
+.colorTipoCarrusel_2 {
+  color: #f1e7e7;
+}
+
+/* fin carrusel */
+.carbody__titu {
+  font-size: 1.7rem;
+}
+
+.card__efecto:hover {
+  transition: all 0.5s ease;
+  /*crece el card*/
+  transform: scale(1.1, 1.1);
+}
+
+.contenedorTipoCate {
+  position: relative;
+  /* display: inline-block; */
+  text-align: center;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #af6a3f;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}

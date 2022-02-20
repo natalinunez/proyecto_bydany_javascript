@@ -1,0 +1,45 @@
+@import './vars';
+/* @import "https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"; */
+@font-face {
+    font-family: 'robotoMedium';
+    src: url('../tipocrafia/Roboto-Medium.ttf')
+  }
+  
+  /* @font-face {
+    font-family: 'robotoMedium';
+    src: url('../tipocrafia/DancingScript/DancingScript-Regular.ttf')
+  } */
+  
+  /* //Inicio Reset CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $fontSizeGeneral;//1rem
+    color : $colorTipograGeneral;
+  }
+  
+  body {
+    font-family: "robotoMedium";    
+    font-size: $fontSizeGeneral;//1rem
+    color : $colorTipograGeneral;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Courgette', cursive; */
+    
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    //text-decoration: none!important;
+    text-decoration: none;
+    font-family: "robotoMedium";
+    font-size: 1.5rem;  
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-size: $fontSizeGeneral;//1rem;
+  }
+  /* //Fin Reset CSS */

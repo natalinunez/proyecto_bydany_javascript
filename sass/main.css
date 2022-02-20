@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/* para pruebas */
+/* para pruebas */
+/* @import "https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"; */
+@font-face {
+  font-family: 'robotoMedium';
+  src: url("../tipocrafia/Roboto-Medium.ttf");
+}
+
+/* @font-face {
+    font-family: 'robotoMedium';
+    src: url('../tipocrafia/DancingScript/DancingScript-Regular.ttf')
+  } */
+/* //Inicio Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  color: #D69C79;
+}
+
+body {
+  font-family: "robotoMedium";
+  font-size: 1rem;
+  color: #D69C79;
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Courgette', cursive; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "robotoMedium";
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+}
+
+/* //Fin Reset CSS */
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡       HEADER   ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡*/
+/* Inicio cabecera */
+/* border: 1px solid #D69C79; */
+/* background-color: #E4DCD8;    */
+/* para pruebas */
+/* para pruebas */
+.nav__estilo {
+  font-size: 1.6rem;
+  font-weight: none;
+  margin-bottom: 0rem;
+  color: #D69C79 !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav__estilo:hover {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #D69C79;
+  border-bottom: 3px solid #D69C79;
+}
+
+h1 {
+  position: relative;
+  left: -150px;
+}
+
+.header__logo {
+  border-radius: 50%;
+  border: 1px solid #D69C79;
+  width: 7rem;
+  height: 7rem;
+  -webkit-animation: animaImg 5s ease 0s infinite;
+          animation: animaImg 5s ease 0s infinite;
+  /* para pruebas */
+  /* background-color: #7ca51b;  
+    border: 1px solid #1e0db4; */
+}
+
+.header__compras {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #D69C79;
+}
+
+/*Animacion para logo e imagen de compras*/
+@-webkit-keyframes animaImg {
+  0% {
+    -webkit-transform: scale(0.8, 0.8) rotate(0deg);
+            transform: scale(0.8, 0.8) rotate(0deg);
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9) rotate(0deg);
+            transform: scale(0.9, 0.9) rotate(0deg);
+    /* transform: rotate(20deg); */
+  }
+  100% {
+    -webkit-transform: scale(1, 1) rotate(40deg);
+            transform: scale(1, 1) rotate(40deg);
+    /* transform: rotate(40deg);     */
+  }
+}
+@keyframes animaImg {
+  0% {
+    -webkit-transform: scale(0.8, 0.8) rotate(0deg);
+            transform: scale(0.8, 0.8) rotate(0deg);
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9) rotate(0deg);
+            transform: scale(0.9, 0.9) rotate(0deg);
+    /* transform: rotate(20deg); */
+  }
+  100% {
+    -webkit-transform: scale(1, 1) rotate(40deg);
+            transform: scale(1, 1) rotate(40deg);
+    /* transform: rotate(40deg);     */
+  }
+}
+
+/* fin cabecera */
+.botonLogo {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.styleBubbleCart {
+  color: #b2b5b9;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: 1px solid #D69C79;
+  background-color: #f0edec;
+  height: 1.3rem;
+  width: 1.3rem;
+  top: 10%;
+  left: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+/* para pruebas */
+/* para pruebas */
+/*////////////////////////////////////////////////////////////////Pagina Principal///////////////////////////////////////////////////////*/
+/* inicio carrusel */
+/* Esto es para controlar alto de la imagen del carrusel */
+/* carousel-item es una clase propia de bootstrap*/
+.carouselItem {
+  height: 80vh;
+}
+
+.carouselItem__titulo {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #af6a3f;
+}
+
+.carouselItem__titulo_1 {
+  color: #D69C79;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  background-color: #f1e6df;
+  padding-top: 0.5rem;
+}
+
+.carouselItem__parrafo {
+  font-size: 2.2rem;
+  font-weight: none;
+  margin-bottom: 0.5rem;
+  color: #af6a3f;
+}
+
+.colorTipoCarrusel_1 {
+  color: #868080;
+}
+
+.colorTipoCarrusel_2 {
+  color: #f1e7e7;
+}
+
+/* fin carrusel */
+.carbody__titu {
+  font-size: 1.7rem;
+}
+
+.card__efecto:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*crece el card*/
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.contenedorTipoCate {
+  position: relative;
+  /* display: inline-block; */
+  text-align: center;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #af6a3f;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* para pruebas */
+/* para pruebas */
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡    FOOTER   /////////////////////////////////////////////////////////////////////////*/
+/* inicio footer */
+.estifooter__titulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+
+.estifooter__titulo:hover {
+  color: #d48c5f;
+}
+
+.estifooter__tituloancla {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+
+.estifooter__tituloancla:hover {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #C1B0A8;
+}
+
+.estifooter__icon {
+  color: #d48c5f;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* background-color: rgb(197, 89, 17); */
+  /* border: 3px solid #230985;   */
+}
+
+.redSocial:hover {
+  -webkit-transform: rotate(30deg) scale(1.1);
+          transform: rotate(30deg) scale(1.1);
+}
+
+.redSocial:hover .estiloRed--facebook {
+  color: #3b5998;
+}
+
+.redSocial:hover .estiloRed--instagram {
+  color: #DD2A7B;
+}
+
+.redSocial:hover .estiloRed--tiktok {
+  color: #69C9D0;
+}
+
+.footer__copyrigth {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: none;
+  margin-bottom: 0rem;
+  color: #d48c5f;
+}
+
+/* fin footer */
+/* para pruebas */
+/* para pruebas */
+.card__boton {
+  font-size: 1.2rem;
+  color: #d48c5f;
+  background-color: #E4DCD8;
+}
+
+.card__boton:hover {
+  color: #d48c5f;
+  font-weight: bold;
+}
+
+.card__hover:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*crece el card*/
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  color: #d48c5f;
+  font-weight: bold;
+}
+
+.card__body {
+  font-size: 1.2rem;
+  color: #d48c5f;
+}
+
+.estiloNombreCategoria {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #D69C79;
+  text-align: center;
+}
+
+.fontsizeColorWeight {
+  font-size: 1.2rem;
+  color: #D69C79;
+  font-weight: none;
+}
+
+.flexBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+/* para pruebas */
+/* para pruebas */
+/* para pruebas */
+.sectionWe__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: #D69C79;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /* para pruebas */
+  /* border: 2px solid #230985; */
+}
+
+.sectionWe__title:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.sectionWe__description {
+  line-height: 1.8rem;
+  text-align: justify;
+  padding: 0.5em 1em;
+  /* para pruebas */
+  /* border: 2px solid #230985; */
+}
+
+.sectionWe__img:hover {
+  width: auto;
+  height: 50vh;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+}
+
+/* para pruebas */
+/* para pruebas */
+.tituloParrafo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #D69C79;
+}
+
+.fondo {
+  background-color: #f1e6df;
+}
+
+.colorTipografia {
+  color: #D69C79;
+}
+
+.parrafo {
+  line-height: 1.8rem;
+}
+
+.btnFormulario {
+  border: 1px solid #D69C79;
+  color: #D69C79;
+  background-color: #f1e6df;
+}
+
+.btnFormulario:hover {
+  color: #D69C79;
+}
+
+/* para pruebas */
+/* para pruebas */
+.estiloGeneral {
+  width: 2.5rem;
+  border: 1px solid #D69C79;
+}
+
+.botonCantiCarrito {
+  border: 1px solid #D69C79;
+  color: #D69C79;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btnCart {
+  border: 1px solid #D69C79;
+  color: #D69C79;
+  background-color: #f1e6df;
+}
+
+.btnCart:hover {
+  border: 1px solid #D69C79;
+  color: #D69C79;
+  background-color: #f1e6df;
+}
+
+/* para pruebas */
+/*# sourceMappingURL=main.css.map */

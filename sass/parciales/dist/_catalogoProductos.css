@@ -1,0 +1,48 @@
+/* para pruebas */
+/* para pruebas */
+.card__boton {
+  font-size: 1.2rem;
+  color: #d48c5f;
+  background-color: #E4DCD8;
+}
+.card__boton:hover {
+  color: #d48c5f;
+  font-weight: bold;
+}
+
+.card__hover:hover {
+  transition: all 0.5s ease;
+  /*crece el card*/
+  transform: scale(1.05, 1.05);
+  color: #d48c5f;
+  font-weight: bold;
+}
+
+.card__body {
+  font-size: 1.2rem;
+  color: #d48c5f;
+}
+
+.estiloNombreCategoria {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #D69C79;
+  text-align: center;
+}
+
+.fontsizeColorWeight {
+  font-size: 1.2rem;
+  color: #D69C79;
+  font-weight: none;
+}
+
+.flexBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* para pruebas */
